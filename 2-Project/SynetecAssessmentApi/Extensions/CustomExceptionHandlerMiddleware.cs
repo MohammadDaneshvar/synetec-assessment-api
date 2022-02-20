@@ -1,6 +1,5 @@
 ﻿using FluentValidation;
 using Framework.Application;
-using Framework.Domain.Enum;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;

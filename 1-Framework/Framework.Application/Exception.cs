@@ -1,6 +1,4 @@
-﻿using Framework.Application.Common.Extentions;
-using Framework.Domain.Enum;
-using System;
+﻿using System;
 
 namespace Framework.Application
 {

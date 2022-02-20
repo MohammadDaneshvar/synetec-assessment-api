@@ -22,8 +22,6 @@ namespace Framework.Data.EF.Extensions
         public DateTime? FromDateFilter { get; set; }
         public DateTime? ToDateFilter { get; set; }
         public int? OrganizationIdFilter { get; set; }
-        public Domain.Enum.ActionTypeEnum? ActionTypeFilter { get; set; }
-
     }
 
 }

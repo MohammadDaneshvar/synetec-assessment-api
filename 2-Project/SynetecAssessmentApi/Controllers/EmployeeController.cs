@@ -1,11 +1,8 @@
 ﻿using Framework.Application;
 using Framework.Application.Common.Extentions;
 using Microsoft.AspNetCore.Mvc;
-using SynetecAssessmentApi.Dtos;
 using SynetecAssessmentApi.Service.Contracts.Queries;
-using SynetecAssessmentApi.Services;
 using System.Threading.Tasks;
-using System.Windows.Input;
 
 namespace SynetecAssessmentApi.Controllers
 {
