@@ -26,7 +26,6 @@ namespace Framework.Application.Config
             container.Register<IEventHandlerFactory, EventHandlerFactory>(Lifestyle.Singleton);
             container.Collection.Register(typeof(IEventHandler<>), new List<Assembly> { application });
             container.Register<ICacheProvider, RedisCacheProvider>(Lifestyle.Singleton);
-
         }
     }
 }

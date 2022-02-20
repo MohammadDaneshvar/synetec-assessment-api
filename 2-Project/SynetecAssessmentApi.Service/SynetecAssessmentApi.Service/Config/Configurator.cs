@@ -14,7 +14,6 @@ namespace SynetecAssessmentApi.Service.Config
         public class EventHandlerFactory : IEventHandlerFactory
         {
             private readonly Container _container;
-
             public EventHandlerFactory(Container container)
             {
                 _container = container;

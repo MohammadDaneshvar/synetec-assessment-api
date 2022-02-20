@@ -16,6 +16,5 @@ namespace SynetecAssessmentApi.Services.Queries.Employees
             }
             return bonusAllocation;
         }
-
     }
 }

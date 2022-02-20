@@ -40,6 +40,7 @@ namespace SynetecAssessmentApi.UnitTest
             _employeeRepositoryMock = new Mock<IRepository<Employee>>();
             _employeeBonusFormula = new Mock<IEmployeeBonusFormula>();
         }
+
         [Test]
         public void GetEmplyeeBonusQuery_Should_ThrowException_When_EmployIdIsNotExists()
         {
@@ -56,6 +57,7 @@ namespace SynetecAssessmentApi.UnitTest
             Assert.AreEqual(exception.Message, "SelectedEmployeeId is not exists in the database.");
             _employeeRepositoryMock.Verify(x => x.Query());
         }
+
         [Test]
         [TestCase(100000)]
         [TestCase(500000)]
@@ -80,6 +82,7 @@ namespace SynetecAssessmentApi.UnitTest
             _employeeBonusFormula.Verify(x => x.Calculate(It.IsAny<decimal>(), It.IsAny<decimal>(), It.IsAny<decimal>()));
             Assert.AreEqual(result.Amount, expectedBonusAllocation);
         }
+
         [Test]
         public async Task GetEmployeesQuery_ShouldReturnTwoRecord_WhenNumberOfEmployeesAreTwo()
         {

@@ -8,7 +8,6 @@ namespace Framework.Domain.Events
         protected Event()
         {
         }
-
         public Event(string name, string originator, string aggregateId, string content, string eventName)
         {
             createDate = DateTime.Now;

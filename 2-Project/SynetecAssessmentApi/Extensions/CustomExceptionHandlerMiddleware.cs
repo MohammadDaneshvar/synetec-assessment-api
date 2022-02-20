@@ -33,7 +33,6 @@ namespace SynetecAssessmentApi.Extensions
                 await HandleExceptionAsync(context, ex);
             }
         }
-
         private Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
             var code = HttpStatusCode.BadRequest;
@@ -61,7 +60,6 @@ namespace SynetecAssessmentApi.Extensions
             return context.Response.WriteAsync(JsonConvert.SerializeObject(new { error = result}));
         }
     }
-
     public static class CustomExceptionHandlerMiddlewareExtensions
     {
         public static IApplicationBuilder UseCustomExceptionHandler(this IApplicationBuilder builder)

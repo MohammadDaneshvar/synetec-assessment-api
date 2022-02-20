@@ -21,9 +21,5 @@
     <ProjectReference Include="..\SynetecAssessmentApi.Service\SynetecAssessmentApi.Service\SynetecAssessmentApi.Service.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 
 </Project>

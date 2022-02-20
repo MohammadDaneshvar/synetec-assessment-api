@@ -14,9 +14,6 @@ using Newtonsoft.Json;
 
 namespace Framework.Data.EF
 {
-
-  
-
     public class EFRepository<TEntity> : IRepository<TEntity> where TEntity : class /*,IAggregateRoot*/
     {
         private readonly IDbContext _dbContext;

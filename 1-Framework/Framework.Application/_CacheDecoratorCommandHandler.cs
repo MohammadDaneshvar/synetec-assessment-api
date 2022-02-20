@@ -36,7 +36,6 @@ namespace Framework.Application
                 {
                     await _decoratee.HandleAsync(command, cancellationToken);
                     await cacheProvider.AddAsync(key, command.Result);
-
                 }
             }
         }

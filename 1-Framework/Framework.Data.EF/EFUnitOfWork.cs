@@ -15,7 +15,6 @@ namespace Framework.Data.EF
         {
             await _dbContext.BeginAsync(cancellationToken);
         }
-
         public  void Commit()
         {
             _dbContext.Commit();
@@ -29,25 +28,5 @@ namespace Framework.Data.EF
         {
           await   _dbContext.RollbackAsync(cancellationToken);
         }
-
-  
-        //public Task<IDbContextTransaction> BeginAsync()
-        //{
-        //  return   await _dbContext.Database.BeginTransactionAsync();
-        //}
-
-        //public void CommitAsync()
-        //{
-        //    _dbContext.Database.CommitTransaction();
-        //}
-        //public int SaveChangesAsync()
-        //{
-        //    return _dbContext.SaveChanges();
-        //}
-
-        //public void RollbackAsync()
-        //{
-        //    _dbContext.Database.RollbackTransaction();
-        //}
     }
 }

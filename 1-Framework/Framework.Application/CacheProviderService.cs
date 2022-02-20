@@ -15,7 +15,6 @@ namespace Framework.Application
         {
             _distributedCache = distributedCache;
         }
-
         public async Task CacheRequestAsync(string cacheKey, object request, TimeSpan time)
         {
             if (request == null) return;
@@ -25,7 +24,6 @@ namespace Framework.Application
                 AbsoluteExpirationRelativeToNow = time
             });
         }
-                
         public async Task<string> GetCachedRequestAsync(string cacheKey)
         {
             var cachedRequest = await _distributedCache.GetStringAsync(cacheKey);

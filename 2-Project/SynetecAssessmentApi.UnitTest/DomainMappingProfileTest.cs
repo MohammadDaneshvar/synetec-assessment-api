@@ -29,6 +29,7 @@ namespace SynetecAssessmentApi.UnitTest
             });
             _mapper = mapperConfig.CreateMapper();
         }
+
         [Test]
         public void Mapping_Employee_To_EmployeeDto_Successfully()
         {

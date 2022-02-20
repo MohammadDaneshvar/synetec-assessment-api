@@ -24,6 +24,7 @@ namespace  SynetecAssessmentApi.Services.Queries.Employees
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
             _employeeBonusFormula = employeeBonusFormula ?? throw new ArgumentNullException(nameof(employeeBonusFormula));
         }
+
         public async Task HandleAsync(GetEmplyeeBonusQuery command, CancellationToken cancellationToken)
         {
             //load the details of the selected employee using the Id

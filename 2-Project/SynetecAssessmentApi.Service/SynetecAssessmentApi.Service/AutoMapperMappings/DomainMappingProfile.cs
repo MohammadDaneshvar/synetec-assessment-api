@@ -13,8 +13,6 @@ namespace SynetecAssessmentApi.Service.AutoMappers
         {
             CreateMap<Department, DepartmentDto>();
             CreateMap<Employee, EmployeeDto>();
-            
-            
         }
     }
 }

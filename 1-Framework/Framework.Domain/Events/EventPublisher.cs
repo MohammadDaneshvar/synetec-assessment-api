@@ -14,14 +14,12 @@ namespace Framework.Domain.Events
                 return (_eventHandlers ?? (_eventHandlers=new Dictionary<Type, IList<Action<object>>>()));
             }
         }
-
         public static void Raise<E>(E @event)
         {
             if (EventHandlers.ContainsKey(@event.GetType().GetInterfaces()[0]))
                 foreach (var handler in EventHandlers[@event.GetType().GetInterfaces()[0]])
                     handler(@event);
         }
-
         public static IDisposable Register<E>(Action<E> handler)
         {
             Action<object> callback = @event => handler((E)@event);

@@ -9,9 +9,5 @@ namespace Framework.Data.EF
         void Commit();
         Task RollbackAsync(CancellationToken cancellationToken = default);
         Task<int> SaveChangesAsync(CancellationToken cancellationToken = default);
-        //void Task BeginAsync();
-        //void Task CommitAsync();
-        //void Task RollbackAsync();
-        //Task<int> SaveChangesAsync();
     }
 }

@@ -7,8 +7,6 @@ namespace Framework.Domain.Aggregate
         where TEntity : EntityBase<TEntity, TID>
     {
         public abstract TID Id { get; }
-
-
         /// <summary>
         ///     Indicates whether the current object
         ///     is equal to another object of the same type.

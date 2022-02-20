@@ -16,36 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Resource\ActionType.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>ActionType.resx</DependentUpon>
-    </Compile>
-    <Compile Update="Resource\Display.Designer.cs">
-      <DependentUpon>Display.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Update="Resource\Status.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Status.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Resource\ActionType.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ActionType.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resource\Display.resx">
-      <LastGenOutput>Display.Designer.cs</LastGenOutput>
-      <Generator>PublicResXFileCodeGenerator</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Resource\Status.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Status.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
+    <Folder Include="Enum\" />
+    <Folder Include="Resource\" />
   </ItemGroup>
 
 </Project>

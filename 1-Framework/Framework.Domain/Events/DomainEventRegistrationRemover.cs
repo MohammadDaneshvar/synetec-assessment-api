@@ -10,7 +10,6 @@ namespace Framework.Domain.Events
         {
             callOnDispose = toCall;
         }
-
         public void Dispose()
         {
             callOnDispose.DynamicInvoke();

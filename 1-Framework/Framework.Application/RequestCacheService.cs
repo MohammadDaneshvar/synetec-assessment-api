@@ -22,11 +22,6 @@ namespace Framework.Application
         {
             if (value != null)
             {
-                //var serializedResponse = JsonConvert.SerializeObject(value);
-                //await _distributedCache.SetStringAsync(cacheKey, serializedResponse, new DistributedCacheEntryOptions
-                //{
-                //    AbsoluteExpirationRelativeToNow = time
-                //});
             }
                 await Task.CompletedTask;
         }
@@ -35,8 +30,6 @@ namespace Framework.Application
         {
             await Task.CompletedTask;
             return true;
-            //var cachedRequest = await _distributedCache.GetStringAsync(cacheKey);
-            //return string.IsNullOrWhiteSpace(cachedRequest) ? null : cachedRequest;
         }
 
         public Task<T> GetAsync<T>(string key)

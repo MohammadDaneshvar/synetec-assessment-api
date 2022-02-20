@@ -18,7 +18,6 @@ namespace Framework.Domain.Aggregate
                                        BindingFlags.Instance)
                 .All(p => p.GetValue(this).Equals(p.GetValue(obj)));
         }
-
         public override int GetHashCode()
         {
             int hashCode = 31;

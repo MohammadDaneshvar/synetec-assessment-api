@@ -28,7 +28,6 @@ namespace Framework.Domain.Aggregate
         {
             get { return toDate; }
         }
-
         public virtual bool IsIn(DateTime now)
         {
             var pnow = new PersianDate(now);
