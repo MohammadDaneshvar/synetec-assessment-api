@@ -18,4 +18,5 @@ Describing the patterns and techniques that are used in the Project
 - AutoMapper
 - NUnit
 - CQRS pattern
+- Fixture library( to create random data for the unit test)
 - Employee services are in (EmployeeQueryHandlers.cs)
